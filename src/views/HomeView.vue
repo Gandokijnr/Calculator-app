@@ -1,12 +1,12 @@
 <template>
   <main class="bg-gray-900 p-12">
     <div class="flex justify-center rounded">
-      <div class="wrapper bg-gray-800 rounded-t-lg rounded-b-lg">
-        <div class="calculator bg-gray-300 h-40 rounded-b-3xl rounded-t-lg flex flex-col justify-between p-8 m-4">
-          <p class="flex justify-start font-bold text-5xl"> {{ result }} </p>
-          <p class="flex justify-end font-bold text-3xl"> {{ expression }} </p>
+      <div class="wrapper bg-gray-800 rounded-t-lg rounded-b-lg w-96">
+        <div class="calculator bg-gray-300 h-40 rounded-b-3xl rounded-t-lg flex flex-col justify-between p-2 m-4 truncate">
+          <p class="flex justify-start font-bold text-5xl w-96 truncate"> {{ result }} </p>
+          <p class="flex justify-end font-bold text-3xl truncate"> {{ expression }} </p>
       </div>
-      <div class="calculator bg-gray-800 w-96 h-96 rounded-t-3xl rounded-b-lg mt-12 row px-8">
+      <div class="calculator bg-gray-800 w-96 h-96 rounded-t-3xl rounded-b-lg mt-12 row px-8 truncate">
         <div class="col flex justify-around gap-4 text-center mb-4">
           <span class="p-3 px-5 text-2xl bg-gray-400 rounded-full cursor-pointer" @click="clear_all_expression()">AC</span>
           <span class="p-3 px-7 text-2xl bg-gray-400 rounded-full cursor-pointer" @click="appendToExpression('%')">%</span>
